@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Deck | FloodGuard KZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="presentation.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
+    <!-- Advanced Effects -->
+    <div class="scroll-progress"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Background -->
+    <div class="bg-glow"></div>
+
+    <!-- Presentation Container -->
+    <div class="deck-container">
+        
+        <!-- Slide 1: Титульный лист -->
+        <section class="slide center" id="slide-1">
+            <div class="slide-content text-center">
+                <div class="badge">Hackathon 2026 Pitch Deck</div>
+                <h1 class="title">FloodGuard <span class="text-cyan">KZ</span></h1>
+                <h2 class="subtitle">Умная защита от большой воды и ледяных заторов</h2>
+                <div class="team-info glass-box">
+                    <p><i class="ph ph-users"></i> <b>Команда:</b> [Имя 1], [Имя 2], [Имя 3]</p>
+                    <p><i class="ph ph-map-pin"></i> <b>Регион:</b> Казахстан</p>
+                </div>
+                <p class="swipe-hint">Листайте вниз или используйте стрелки <i class="ph ph-arrow-down"></i></p>
+            </div>
+        </section>
+
+        <!-- Slide 2: Описание проблемы -->
+        <section class="slide" id="slide-2">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <span class="slide-num">01 / Проблема</span>
+                    <h2>Паводки — угроза №1 для безопасности</h2>
+                </div>
+                <div class="grid-2">
+                    <div>
+                        <p class="large-text">Ежегодно сотни поселков вдоль рек Жайык, Есиль и Тобол находятся в зоне риска из-за огромных весенних паводков и скрытых ледяных заторов (кептеліс).</p>
+                        <ul class="feature-list">
+                            <li><i class="ph-fill ph-x-circle text-red"></i> <b>Слепота текущих систем:</b> Обычные гидропосты измеряют лишь поверхность.</li>
+                            <li><i class="ph-fill ph-x-circle text-red"></i> <b>Невидимая угроза:</b> Заторы формируются глубоко под водой.</li>
+                            <li><i class="ph-fill ph-x-circle text-red"></i> <b>Запоздалая реакция:</b> Узнаем об угрозе, когда вода уже ломает дамбы.</li>
+                        </ul>
+                    </div>
+                    <div class="visual-box alert-box">
+                        <i class="ph-fill ph-warning-circle text-red massive-icon"></i>
+                        <h3>Ущерб измеряется миллиардами</h3>
+                        <p>И, что самое страшное, человеческими жизнями и потерями фермерских хозяйств.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Решение -->
+        <section class="slide" id="slide-3">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <span class="slide-num">02 / Решение</span>
+                    <h2>Предиктивный мониторинг</h2>
+                </div>
+                <div class="grid-2 reverse">
+                    <div>
+                        <p class="large-text">Программно-аппаратный комплекс для измерения гидродинамики из-под воды.</p>
+                        <ul class="feature-list">
+                            <li><i class="ph-fill ph-check-circle text-cyan"></i> <b>Под водой:</b> Донный узел с датчиками давления и потока.</li>
+                            <li><i class="ph-fill ph-check-circle text-cyan"></i> <b>Связь (LoRaWAN):</b> Дальнобойная передача сигналов из степей.</li>
+                            <li><i class="ph-fill ph-check-circle text-cyan"></i> <b>Аналитика (ML):</b> Падение скорости + рост давления = 100% предиктор затора.</li>
+                        </ul>
+                    </div>
+                    <div class="visual-box glass-box">
+                        <div class="hardware-mockup">
+                            <i class="ph ph-cpu text-cyan step-icon"></i>
+                            <span class="line"></span>
+                            <i class="ph ph-wifi-high text-cyan step-icon"></i>
+                            <span class="line"></span>
+                            <i class="ph ph-brain text-cyan step-icon"></i>
+                        </div>
+                        <p class="text-center mt-4">Hardware + IoT + AI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Продукт -->
+        <section class="slide" id="slide-4">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <span class="slide-num">03 / Продукт</span>
+                    <h2>Функционал системы</h2>
+                </div>
+                <div class="cards-grid">
+                    <div class="glass-box">
+                        <i class="ph ph-waves text-cyan med-icon"></i>
+                        <h3>Донный сенсорный узел</h3>
+                        <p>Ультразвуковой сонар для толщины льда и датчик давления (высота столба).</p>
+                    </div>
+                    <div class="glass-box">
+                        <i class="ph ph-monitor text-cyan med-icon"></i>
+                        <h3>МЧС Dashboard</h3>
+                        <p>Интерактивная тепловая веб-карта рек в реальном времени с уровнями риска.</p>
+                    </div>
+                    <div class="glass-box">
+                        <i class="ph ph-bell-ringing text-cyan med-icon"></i>
+                        <h3>Система алертов</h3>
+                        <p>Автоматическая отправка координат критических узлов в Telegram-канал спасателей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Целевая Аудитория -->
+        <section class="slide" id="slide-5">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <span class="slide-num">04 / Аудитория</span>
+                    <h2>Целевая аудитория (B2G & B2B)</h2>
+                </div>
+                <div class="grid-2">
+                    <div class="glass-box border-cyan">
+                        <h3><i class="ph-fill ph-shield-check text-cyan"></i> Основной клиент (B2G)</h3>
+                        <ul class="feature-list mt-3">
+                            <li>Министерство по чрезвычайным ситуациям (МЧС РК)</li>
+                            <li>РГП "Казгидромет"</li>
+                            <li>Акиматы паводкоопасных областей (ЗКО, СКО, Костанай)</li>
+                        </ul>
+                    </div>
+                    <div class="glass-box border-gray">
+                        <h3><i class="ph-fill ph-briefcase text-gray"></i> Вторичный рынок (B2B)</h3>
+                        <ul class="feature-list mt-3">
+                            <li>Крупные Агрохолдинги (защита полей и инфраструктуры)</li>
+                            <li>Страховые компании (оценка рисков)</li>
+                            <li>Гидроэлектростанции</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Impact -->
+        <section class="slide" id="slide-6">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <span class="slide-num">05 / Impact</span>
+                    <h2>Оценка эффекта от внедрения</h2>
+                </div>
+                <div class="impact-stats">
+                    <div class="stat-item glass-box">
+                        <i class="ph-fill ph-heartbeat text-red massive-icon"></i>
+                        <h4>Социальный эффект</h4>
+                        <p>Своевременная эвакуация людей и скота (за 24-48 часов). Спасение жизней.</p>
+                    </div>
+                    <div class="stat-item glass-box">
+                        <i class="ph-fill ph-bank text-yellow massive-icon"></i>
+                        <h4>Экономический</h4>
+                        <p>Предотвращение 10% ущерба экономит миллиарды тенге из гос. бюджета ежегодно.</p>
+                    </div>
+                    <div class="stat-item glass-box">
+                        <i class="ph-fill ph-target text-cyan massive-icon"></i>
+                        <h4>Инфраструктурный</h4>
+                        <p>Точечный подрыв заторов *до* критического скопления воды.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Roadmap -->
+        <section class="slide" id="slide-7">
+            <div class="slide-content">
+                <div class="slide-header">
+                    <span class="slide-num">06 / Roadmap</span>
+                    <h2>План развития проекта</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-step">
+                        <div class="step-dot"></div>
+                        <h4>Месяцы 1-2</h4>
+                        <p>Тестирование MVP (hardware-узлов). Обучение ML-модели на исторических данных.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-dot"></div>
+                        <h4>Месяцы 3-4</h4>
+                        <p>Пилотный запуск. Установка 10 узлов на тестовом участке реки Жайык.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-dot"></div>
+                        <h4>Месяцы 5-6</h4>
+                        <p>Интеграция с системами МЧС (Smart City / Умный город).</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="step-dot highlight"></div>
+                        <h4>2-й Год</h4>
+                        <p>Масштабирование на все реки и выход на правительственные тендеры.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Прототип -->
+        <section class="slide center" id="slide-8">
+            <div class="slide-content text-center">
+                <div class="badge">MVP Ready</div>
+                <h2 class="title" style="font-size: 3.5rem;">Наш Прототип</h2>
+                <p class="large-text mt-3" style="max-width: 600px; margin: 0 auto 40px auto;">
+                    Мы уже разработали интерактивный лендинг с дизайн-концептом дашборда и симуляцией системы.
+                </p>
+                
+                <a href="index.html" class="btn btn-primary btn-large">
+                    <i class="ph ph-laptop"></i>
+                    Открыть прототип (index.html)
+                </a>
+
+                <div class="final-words mt-5 text-gray p-4">
+                    <p>"Мы видим то, что скрыто под водой!"</p>
+                    <p class="mt-2"><b>Спасибо за внимание! Команда FloodGuard KZ.</b></p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

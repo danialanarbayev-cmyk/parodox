@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2O SMART | Абсолютный контроль воды</title>
+    <meta name="description" content="H2O SMART: Коммерческая In-line станция контроля качества питьевой воды для частных домов и школ. Мониторинг pH, TDS, мутности и температуры в реальном времени.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
+    <!-- Advanced Effects -->
+    <div class="scroll-progress"></div>
+    <div class="bg-grid"></div>
+    <!-- Background Elements -->
+    <div class="bg-glow bg-glow-cyan"></div>
+    <div class="bg-glow bg-glow-blue"></div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i class="ph-fill ph-drop"></i>
+                <span>H2O SMART</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Продукт</a></li>
+                <li><a href="#features">Технологии</a></li>
+                <li><a href="#app">Приложение</a></li>
+                <li><a href="presentation.html" class="nav-presentation">Питч-дек</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="container hero-content">
+            <div class="badge">Commercial IoT MVP</div>
+            <h1 class="hero-title">Безупречная чистота <br><span class="text-gradient">в каждой капле.</span></h1>
+            <p class="hero-subtitle">
+                Врезной промышленный IoT-дегустатор качества питьевой воды для вашего дома или школы. 
+                Контроль pH, TDS, температуры и мутности прямо внутри трубы.
+            </p>
+            <div class="hero-actions">
+                <a href="#features" class="btn btn-primary">
+                    <i class="ph ph-cpu"></i>
+                    Как это работает
+                </a>
+                <a href="presentation.html" class="btn btn-secondary">
+                    <i class="ph ph-presentation-chart"></i>
+                    Презентация продукта
+                </a>
+            </div>
+            
+            <!-- Hero 3D Concept Abstract Illustration -->
+            <div class="hero-device reveal">
+                <div class="pipe line-h"></div>
+                <div class="pipe line-v"></div>
+                <div class="sensor-unit">
+                    <div class="sensor-cap">
+                        <div class="led-indicator pulse-green"></div>
+                        <span class="chip-text">ESP32</span>
+                    </div>
+                    <div class="sensor-body">
+                        <div class="battery-slot"></div>
+                        <div class="battery-slot"></div>
+                    </div>
+                    <div class="sensor-probe ph-probe">
+                        <span class="probe-label">pH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Problem / Why we need this -->
+        <section class="project-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon"><i class="ph-fill ph-shield-warning text-blue"></i></div>
+                    <h2>Вы уверены в том, <span class="text-gradient-cyan">что пьют ваши дети?</span></h2>
+                    <p class="section-desc">Качество воды меняется каждый день. Обычные фильтры не скажут, когда их пора менять.</p>
+                </div>
+                
+                <div class="content-grid">
+                    <div class="content-visual reveal">
+                        <div class="glass-card visual-card">
+                            <div class="visual-header">
+                                <div class="dot red"></div>
+                                <div class="dot yellow"></div>
+                                <div class="dot green"></div>
+                                <span>water-analysis.sys</span>
+                            </div>
+                            <div class="visual-body">
+                                <div class="dashboard-mockup">
+                                    <div class="dash-top">
+                                        <div class="stat-box alert">
+                                            <span>Уровень pH</span>
+                                            <b>9.2 &uarr; (Щелочь)</b>
+                                        </div>
+                                        <div class="stat-box warning">
+                                            <span>TDS (Соли)</span>
+                                            <b>450 ppm</b>
+                                        </div>
+                                        <div class="stat-box">
+                                            <span>Температура</span>
+                                            <b>14.2 °C</b>
+                                        </div>
+                                    </div>
+                                    <div class="dash-chart">
+                                        <div class="bar" style="height: 30%"></div>
+                                        <div class="bar" style="height: 35%"></div>
+                                        <div class="bar" style="height: 40%"></div>
+                                        <div class="bar" style="height: 55%"></div>
+                                        <div class="bar warning" style="height: 75%"></div>
+                                        <div class="bar alert" style="height: 95%"></div>
+                                    </div>
+                                    <p class="bot-alert"><i class="ph-fill ph-bell-ringing"></i> Фильтр не справляется! Закройте подачу.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-text reveal">
+                        <h3>Слепота текущих решений</h3>
+                        <p>Люди покупают дорогие фильтры (обратный осмос) и забывают про них на годы. Никто не тестирует воду каждый день вручную с помощью лакмусовых бумажек или ручных TDS-метров.</p>
+                        
+                        <h3>Наш ответ: Органы чувств для труб</h3>
+                        <p>Мы разработали компактное устройство, которое непрерывно оценивает воду внутри вашей системы и немедленно сообщает на телефон при любом отклонении состава.</p>
+
+                        <div class="features">
+                            <div class="feature-item">
+                                <i class="ph ph-drop"></i>
+                                <div>
+                                    <h4>Автоматический анализ</h4>
+                                    <p>Врезной Т-образный фитинг (In-line). Не нужно набирать воду в стаканчик.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="ph ph-house-line"></i>
+                                <div>
+                                    <h4>Частные дома и Школы</h4>
+                                    <p>Защита здоровья семьи или гарантия безопасности питьевых фонтанчиков для детей.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Hardware Details -->
+        <section id="features" class="project-section section-hardware">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon"><i class="ph-fill ph-circuitry text-cyan"></i></div>
+                    <h2>Технологии <span class="text-gradient">под капотом</span></h2>
+                    <p class="section-desc">Коммерческий Grade-уровень: от пищевого пластика до собственной PCB-платы.</p>
+                </div>
+
+                <div class="hardware-grid reveal">
+                    <!-- Feature 1 -->
+                    <div class="glass-card feat-card">
+                        <i class="ph ph-microchip text-cyan feat-icon"></i>
+                        <h3>ESP32 & Custom PCB</h3>
+                        <p>Мощный контроллер с Wi-Fi интегрирован в собственную печатную плату (PCB) с прецизионными операционными усилителями, исключающими помехи.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="glass-card feat-card">
+                        <i class="ph ph-battery-charging text-blue feat-icon"></i>
+                        <h3>Deep Sleep & 21700</h3>
+                        <p>99.9% времени датчик находится в режиме глубокого сна. Два аккумулятора 21700 обеспечивают автономную работу до 6 месяцев!</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="glass-card feat-card">
+                        <i class="ph ph-plugs text-cyan feat-icon"></i>
+                        <h3>Сменный pH-электрод</h3>
+                        <p>Датчики изнашиваются — это факт. Наш прибор использует стандартные промышленные электроды с резьбой 3/4". Замена происходит за 10 секунд.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="glass-card feat-card">
+                        <i class="ph ph-shield-check text-blue feat-icon"></i>
+                        <h3>Food Grade Материалы</h3>
+                        <p>Антивандальный герметичный корпус IP68 из пищевого поликарбоната. Все щупы закрыты нержавеющей сталью AISI 316.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section id="app" class="cta-section">
+            <div class="container reveal">
+                <div class="glass-card cta-card">
+                    <div class="app-mockup">
+                        <i class="ph-fill ph-device-mobile"></i>
+                    </div>
+                    <h2>Умный уход, а не рутина</h2>
+                    <p>Наше мобильное приложение не только сообщит о загрязнении воды, но и <b>заранее предскажет</b> дату, когда вам потребуется новый фильтр или сменный датчик pH. Один клик — и мы доставим его вам.</p>
+                    <div class="cta-actions">
+                        <a href="presentation.html" class="btn btn-primary btn-large">
+                            Смотреть Pitch Deck
+                        </a>
+                        <button class="btn btn-secondary btn-large alert-btn">
+                            Симуляция Аварии (Тест)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <i class="ph-fill ph-drop"></i> H2O SMART
+            </div>
+            <p>Created for Hackathon 2026. Hardware IoT Solution.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
